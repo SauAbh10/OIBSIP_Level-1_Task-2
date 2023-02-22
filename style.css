@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background-color: rgb(32, 31, 31);
+    font-family: sans-serif;
+    color: antiquewhite;
+    letter-spacing: 1px;
+}
+/*header*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    width:90%;
+    height: 70px;
+    margin: 0 auto;
+justify-content: space-between;
+}
+
+.nav .logo{
+    font-size: 25px;
+}
+.nav ol{
+    list-style: none;
+}
+.nav ol a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin:8px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.nav ol a:hover{
+    background-color: coral;
+    transition: background-color .6s;
+}
+
+/*main*/
+
+.main{
+    width:90%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.main::before, .main::after{
+    content: '';
+width: 75%;
+height: 75%;
+background: #181a1d;
+position: absolute;
+z-index: -10;
+bottom: 0;
+right: -60px;
+}
+
+.main::after{
+    background: #24272b;
+height: 60%;
+top:0;
+left: -300px;
+border-top: 1px solid coral;
+border-right:1px solid navy;
+z-index: -11;
+}
+.a h1{
+    font-size: 75px;
+    margin-bottom: 80px;
+ font-variant: small-caps;
+}
+
+.a .btn{
+font-size: 20px;
+background: none;
+color: antiquewhite;
+border: 1px solid coral;
+cursor: pointer;
+width: 100px;
+height: 35px;
+border-radius: 10px;
+transition: all .5s;
+}
+ 
+.a .btn:hover{
+    background-color: coral;
+}
+
+.main img{
+    width: 400px;
+    position: absolute;
+    right: 60px;
+    z-index: -1;
+    height: 500px;
+    border-radius: 120PX;
+}
+
+/*about*/
+.about{
+    width: 100%;
+    height: 200px;
+    background: #24272b;
+padding: 120px 0px;
+justify-content: space-evenly;
+}
+.name{
+    font-variant: small-caps;
+font-size: 22px;
+letter-spacing: 2px;}
+
+.left_side , .right_side {
+    margin: 50px 20px;
+    width: 35%;
+}
+.about .heading{
+    font-size: 75px;
+font-variant: small-caps;
+border-bottom: 3px solid coral;
+}
+
+.about .right_side{
+    padding-top: 150px;
+    font-size: 20px;
+}
+.about .right_side b{
+    font-size: 25px;
+    border-bottom: 1px solid coral;
+    font-variant: small-caps;
+}
+.about .right_side p{
+    font-size: 15px;
+}
+
+/*education*/
+.education{
+  width: 100%;
+  height: 250px;
+  padding: 120px 0px;
+  justify-content: space-evenly;
+  background: #181a1d;
+
+}
+.left , .right {
+    width: 35%;
+    margin: 50px 100px;
+}
+
+.education .heading{
+    font-size: 75px;
+font-variant: small-caps;
+border-bottom: 3px solid coral;
+}
+.education .left li{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.education .left h3{
+    font-size: 17px;
+    font-variant: small-caps;
+    border-bottom: 1px solid coral;
+}
+.education .left b{
+    font-variant: small-caps;
+}
+
+.education .right img{
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+/*skills*/
+.skills{
+    width: 100%;
+    height: 500px;
+    background: #24272b;
+    padding: 50px 0px;
+}
+.skills .heading{
+    font-size: 75px;
+    font-variant: small-caps;
+    border-bottom: 3px solid coral;
+    margin-left: 100px;
+}
+.skills .all_skill{
+    padding: 50px 250px;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+ .skills .skill {
+    background-color: rgb(116, 194, 92);
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 15px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.html {
+    width: 90%;
+    height: 15px;
+}
+
+.css {
+    width: 80%;
+    height: 15px;
+}
+.javascript {
+    width: 75%;
+    height: 15px;
+}
+
+.bootstrap {
+    width: 60%;
+    height: 15px;
+}
+
+
+.angular {
+    width: 60%;
+    height: 15px;
+}
+
+
+.java {
+    width: 50%;
+    height: 15px;
+}
+
+
+.mysql {
+    width: 75%;
+    height: 15px;
+}
+
+
+.jqurey {
+    width: 60%;
+    height: 15px;
+}
+
+.skills .main_container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    height: 15px;
+}
+
+/*projects*/
+.projects{
+    width: 100%;
+    height: 300px;
+    padding: 30px 0px;
+    background: #181a1d;
+    flex-direction: column;
+}
+
+.projects .heading{
+    font-size: 75px;
+    font-variant: small-caps;
+    border-bottom: 3px solid coral;
+    margin-left: 100px;
+}
+
+.projects .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projects .container a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 30px 10px 5px 5px;
+    position: relative;
+}
+.projects .container a div{
+    background: gainsboro;
+    padding: 20px;
+    color: black;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+.projects .container a div:hover{
+background: coral;
+transition: 0.5s;
+color: antiquewhite;
+}
+
+/*resume*/
+.Resume{
+    width: 100%;
+    height:600px;
+    background: #24272b;
+    padding: 60px 0px;
+}
+.Resume .heading{
+    font-size: 75px;
+    font-variant: small-caps;
+    border-bottom: 3px solid coral;
+    margin-left: 100px;
+}
+iframe{
+    margin-left: 130px;
+    margin-top: 20px;
+}
+/*contact*/
+.Contact{
+    width: 100%;
+    height:300px;
+    background: #181a1d;
+    padding: 60px 0px;
+}
+.Contact .heading{
+    font-size: 75px;
+    font-variant: small-caps;
+    border-bottom: 3px solid coral;
+    margin-left: 100px;
+}
+.Contact form{
+    flex-direction: column;
+}
+.Contact input{
+    background-color: #24272b;
+    border: none;
+    width: 300px;   
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+.Contact input:hover{
+    background-color: coral;
+    color: aliceblue;
+
+}
+.Contact textarea{
+    background-color: #24272b;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size:20px;
+    font-variant: small-caps;
+}
+.Contact textarea:hover{
+    background-color:coral;
+color: antiquewhite;
+}
+.Contact button{
+    cursor: pointer;
+    background-color: #24272b;
+    width:100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+.Contact button:hover{
+    background-color: coral;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #24272b ;
+}
+footer i{
+    width: 50px;
+    height: 50px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+    margin-left: 10px;
+}
